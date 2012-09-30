@@ -48,4 +48,7 @@ e = E(1)/sum(E)*100;
 
 printf("\n%f energy is retained with dimensionality 1\n", e);
 
-
+%set title "PCA Analysis"
+%set xlabel "x"
+%set ylabel "y"
+plot "pca_data.txt" with points
