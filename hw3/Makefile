@@ -3,4 +3,4 @@ all:
 	chmod +x classify.sh 
 clean:
 	rm -rf *.model
-	rm results.txt stats.txt output.txt
+	rm results.txt
