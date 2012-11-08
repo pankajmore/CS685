@@ -1,0 +1,7 @@
+* System Requirements: weka, awk, cut 
+
+* If you have weka installed but dont have the CLASSPATH environment variable set , modify the CLASSPATH variable in classify.sh
+
+* Steps to run the program:  
+# make all
+# ./classify.sh <testfile>
