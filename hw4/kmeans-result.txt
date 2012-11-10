@@ -1,0 +1,20 @@
+silhoutte coefficient for  2  clusters :  0.6928487 
+silhoutte coefficient for  3  clusters :  0.5429615 
+silhoutte coefficient for  4  clusters :  0.6371356 
+silhoutte coefficient for  5  clusters :  0.6611413 
+silhoutte coefficient for  6  clusters :  0.6505026 
+silhoutte coefficient for  7  clusters :  0.6178065 
+silhoutte coefficient for  8  clusters :  0.6227824 
+silhoutte coefficient for  9  clusters :  0.6222037 
+silhoutte coefficient for  10  clusters :  0.6251702 
+silhoutte coefficient for  11  clusters :  0.6451576 
+silhoutte coefficient for  12  clusters :  0.5902356 
+silhoutte coefficient for  13  clusters :  0.6251718 
+silhoutte coefficient for  14  clusters :  0.5816506 
+silhoutte coefficient for  15  clusters :  0.5843339 
+silhoutte coefficient for  16  clusters :  0.5916156 
+silhoutte coefficient for  17  clusters :  0.6260976 
+silhoutte coefficient for  18  clusters :  0.5646306 
+silhoutte coefficient for  19  clusters :  0.5693374 
+silhoutte coefficient for  20  clusters :  0.623156 
+silhouette-optimal number of clusters: 2 with value :  0.6928487 
