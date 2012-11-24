@@ -1,0 +1,5 @@
+* System Requirements: R and package 'pracma' for hampel function
+
+* Steps to run the program:  
+# make all
+# ./anomaly_detector.R
