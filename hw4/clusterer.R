@@ -5,8 +5,10 @@ library('cluster')
 asw <- numeric(20) 
 x <- read.csv("clusters_input.csv")
 
-cl <- kmeans(x,9)$cluster
+hc <- hclust(dist(x,method='minkowski'))
 
-for (k in 1:length(cl)) {
-  cat(cl[k],"\n")
+c <- cutree(hc,9)
+
+for (k in 1:length(c)) {
+  cat(c[k],"\n")
 }

@@ -1,7 +1,6 @@
-* System Requirements: weka, awk, cut 
-
-* If you have weka installed but dont have the CLASSPATH environment variable set , modify the CLASSPATH variable in classify.sh
+* System Requirements: R and package 'cluster'
 
 * Steps to run the program:  
 # make all
-# ./classify.sh <testfile>
+# ./rkmeans.R > kmeans-result.txt
+# ./clusterer.R > labels.txt

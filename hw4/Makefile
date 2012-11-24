@@ -1,6 +1,5 @@
 # Please make sure to include weka.jar in your $CLASSPATH
-all: 
-	chmod +x classify.sh 
-clean:
-	rm -rf *.model
-	rm results.txt stats.txt output.txt
+all: 	
+	chmod +x rkmeans.R
+	chmod +x clusterer.R 
+
