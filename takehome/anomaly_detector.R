@@ -40,6 +40,48 @@ points(x,y,col="red")
 
 } 
 
+plot_loess = function(row) {
+
+plot.ts(data[row,])
+lo <- loess(data[row,]~seq(1:100),control = loess.control(surface = "direct"))
+x <- order(abs(lo$residuals),decreasing=TRUE)[1:5]
+y <- data[row,x]
+lines(predict(lo), col='blue', lwd=2)
+points(x,y,col="red")
+
+}
+
+smoothSpline_matrix = function() {
+
+m <- zeros(100)
+residues <- zeros(100)
+for(i in 1:100) {
+  p <- predict(smoothingSpline)
+  r <- p$y - data[i,]
+  r <- abs(r)
+  residues[i,] = r
+}
+b <- order(residues,decreasing=TRUE)[1:500]
+m[b] = 1
+write.table(m,"smoothSpline.dat",row.names=FALSE,col.names=FALSE)
+return(b)
+
+}
+
+plot_smoothSpline = function(row) {
+
+plot.ts(data[row,])
+smoothingSpline = smooth.spline(seq(1:100), data[row,] )
+p <- predict(smoothingSpline)
+r <- p$y - data[row,]
+r <- abs(r)
+x <- order(r,decreasing=TRUE)[1:5]
+y <- data[row,x]
+lines(predict(smoothingSpline), col='blue', lwd=2)
+points(x,y,col="red")
+
+}
+
 plot_all_hampel = function() {
 for(i in 1:100) {
   filename <- sprintf("%d.png",i)
